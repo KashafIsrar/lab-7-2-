@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cooking Chronicles | Home</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <header>
+        <div class="container-full navbar">
+            <div class="logo">
+                <img src="{{ url_for('static', filename='img/cooklogo.jpg') }}" alt="CookBook Logo">
+            </div>
+            <nav>
+                <ul class="navlinks">
+                    <li class="active"><a href="{{ url_for('home') }}">Home</a></li>
+                    <li><a href="{{ url_for('about') }}">About Us</a></li>
+                    <li><a href="{{ url_for('recipies') }}">Recipies</a></li>
+                    <li><a href="{{ url_for('login') }}">Login</a></li>
+                    <li><a href="{{ url_for('registration') }}">Registration</a></li>
+                    <li><a href="{{ url_for('contact') }}">Need Help?</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!-- Hero Section -->
+    <section id="hero">
+        <div class="herobg">
+            <div class="hero-text">
+                <h1 class="hero-title">Where Every Recipe Tells a Story</h1>
+                <p class="hero-description">Explore, create, and enjoy mouth-watering recipes that turn everyday
+                    ingredients into unforgettable meals.</p>
+                <a href="#login" class="hero-button">Join Our Community</a>
+            </div>
+        </div>
+    </section>
+    <!-- About Us Section -->
+    <section id="aboutus">
+        <div class="about-container">
+            <div class="about-image">
+                <img src="{{ url_for('static', filename='img/cook3.jpeg') }}" alt="cooking pic">
+            </div>
+            <div class="about-text">
+                <h2>About Us</h2>
+                <p>
+                    At <strong>Cooking Chronicles</strong>, Unleash your inner chef with easy-to-follow recipes that
+                    bring out the best in your cooking skills.
+                </p>
+                <p>
+                    From quick weeknight dinners to gourmet weekend feasts, find the recipes that make every meal
+                    memorable.
+                <p>
+                    Join us today and take the first step towards a healthier, happier you.
+                </p>
+                <div class="about-buttons">
+                    <a href="{{ url_for('about') }}" class="btn-about">Learn More About Us</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Services Section -->
+    <section id="services">
+        <div class="services-text">
+            <h2>Services We Offer</h2>
+            <p>
+                We offer many services, including your Recipe Subscription , Cooking Classes/Workshops, recipie
+                submission, and an incredible recipies.
+            </p>
+        </div>
+
+        <div class="services-cards">
+            <!-- Card 1 -->
+            <div class="service-card">
+                <img src="{{ url_for('static', filename='img/cook4.jpeg') }}" alt="custom recipie img">
+                <h3>Custom Recipe Development</h3>
+                <p>
+                    Custom Recipe Development: Get personalized recipes tailored to your taste, dietary needs, and
+                    available ingredients!
+                </p>
+                <a href="#" class="service-button">Learn More</a>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="service-card">
+                <img src="{{ url_for('static', filename='img/food7.jpeg') }}"" alt=" Online Classes">
+                <h3>Online Cooking Classes</h3>
+                <p>
+                    Online Cooking Classes: Join our interactive classes and master new cooking skills from the comfort
+                    of your home.
+                </p>
+                <a href="#" class="service-button">Learn More</a>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="service-card">
+                <img src="{{ url_for('static', filename='img/cook4.jpeg') }}" alt="Friendly Environment Image">
+                <h3>Endless Culinary Inspiration</h3>
+                <p>
+                    Unlock a treasure trove of diverse recipes, cooking tips, and flavor combinations to keep your meals
+                    exciting and creative every day.
+                </p>
+                <a href="#" class="service-button">Learn More</a>
+            </div>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer>
+        <div class="footer">
+            <div class="logo">
+                <img src="{{ url_for('static', filename='img/cooklogo.jpg') }}" alt="CookBook Logo">
+                <p>
+                    Join our community of food lovers and turn every meal into a masterpiece. Explore, cook, and savor
+                    the joy of delicious food today!
+                </p>
+            </div>
+            <div class="footer-menu">
+                <h3>Quick Links</h3>
+                <ul class="footer-links">
+                    <li><a href="./home.html">Home</a></li>
+                    <li><a href="./about.html">About Us</a></li>
+                    <li><a href="./recipies.html">Services</a></li>
+                    <li><a href="./login.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="contact-details">
+                <h3>Contact Details</h3>
+                <address class="contact-items">
+                    <a href="tel:03345643237">0334-564-3237</a><br>
+                    <a href="mailto:cooking.chr@gmail.com">cooking.chr@gmail.com</a><br>
+                    Street 8, DHA Phase 6, Karachi
+                </address>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2024 Cooking Chronicles. All Rights Reserved. Designed by Kashaf Israr (2024F-BSE-125).</p>
+        </div>
+    </footer>
+</body>
+
+</html>

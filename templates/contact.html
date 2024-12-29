@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Cooking Chronicles</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <!-- Navbar -->
+    <header>
+        <div class="container-full navbar">
+            <div class="logo">
+                <img src="{{ url_for('static', filename='img/cooklogo.jpg') }}" alt="CookBook Logo">
+            </div>
+            <nav>
+                <ul class="navlinks">
+                    <li><a href="{{ url_for('home') }}">Home</a></li>
+                    <li><a href="{{ url_for('about') }}">About Us</a></li>
+                    <li><a href="{{ url_for('recipies') }}">Recipies</a></li>
+                    <li><a href="{{ url_for('login') }}">Login</a></li>
+                    <li><a href="{{url_for('registration') }}">Registration</a></li>
+                    <li class="active"><a href="{{ url_for('contact') }}">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="contact-container">
+            <h1>Contact Us</h1>
+            <p>We’d love to hear from you! Here’s how you can reach us:</p>
+
+            <div class="contact-details">
+                <h2>Contact Information</h2>
+                <p><strong>Phone:</strong> <a href="tel:03345643237">0333-555-0000</a></p>
+                <p><strong>Email:</strong> <a href="mailto:cooking.chr@gmail.com">cooking.chr@gmail.com</a></p>
+                <p><strong>Address:</strong> Street 8, DHA Phase 6, Karachi</p>
+            </div>
+
+            <div class="help-section">
+                <h2>Need Help?</h2>
+                <ul>
+                    <li>For recipe-related queries: <strong>Email us at cooking.chr@gmail.com</strong></li>
+                    <li>Technical issues with the website: <strong>Call us at 0334-564-3237</strong></li>
+                    <li>Collaborations or media inquiries: <strong>Email us with "Collaboration" as the subject line</strong></li>
+                </ul>
+            </div>
+
+            <div class="social-links">
+                <h2>Follow Us</h2>
+                <p>Stay connected on social media:</p>
+                <a href="#" target="Cooking Chronicles">Facebook</a> | 
+                <a href="#" target="cookingchronicles">Instagram</a> | 
+                <a href="#" target="Cooking Chronicles">YouTube</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer">
+            <p>&copy; 2024 Cooking Chronicles. All Rights Reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

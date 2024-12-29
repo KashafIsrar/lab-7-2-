@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Cooking Chronicles</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+
+<body>
+    <!-- Navbar Section -->
+    <header>
+        <div class="container-full navbar">
+            <div class="logo">
+                <img src="{{ url_for('static', filename='img/cooklogo.jpg') }}" alt="Cooking Chronicles Logo">
+            </div>
+            <nav>
+                <ul class="navlinks">
+                    <li><a href="{{ url_for('home') }}">Home</a></li>
+                    <li><a href="{{ url_for('about') }}">About</a></li>
+                    <li class="active"><a href="{{ url_for('recipies') }}">Recipes</a></li>
+                    <li><a href="{{ url_for('login') }}">Login</a></li>
+                    <li><a href="{{ url_for('registration') }}">Registration</a></li>
+                    <li><a href="{{ url_for('contact') }}">Need Help?</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <!-- Hero Section -->
+    <section id="hero">
+        <div class="herobg about-hero">
+            <div class="hero-text">
+                <h1 class="hero-title">Explore unique Recipes</h1>
+                <p class="hero-description">
+                    Discover the joy of cooking with a wide range of delicious recipes and cooking tips that suit every occasion.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="recipe-categories">
+        <h2>Browse Recipes by Category</h2>
+        <div class="category-container">
+            <div class="category-card">
+                <h3>Breakfast</h3>
+                <p>Start your day with healthy and delicious options.</p>
+            </div>
+            <div class="category-card">
+                <h3>Dinner</h3>
+                <p>Quick and easy meals for a satisfying dinner.</p>
+            </div>
+            <div class="category-card">
+                <h3>Desserts</h3>
+                <p>Indulge in sweet treats that are simple to make.</p>
+            </div>
+        </div>
+    </section>
+    <section id="featured-recipe">
+        <h2>Featured Recipe of the Week</h2>
+        <div class="featured-recipe-card">
+            <img src="{{ url_for('static', filename='img/homepg.jpg') }}" alt="Featured Recipe">
+            <h3>Spaghetti Aglio e Olio</h3>
+            <p>A quick and delicious Italian dish made with garlic, olive oil, and chili flakes.</p>
+            <a href="{{ url_for('recipies', recipies=1) }}">View Recipe</a>
+        </div>
+    </section>
+    
+    <!-- Services Section -->
+    <section id="services">
+        <div class="services-container">
+            <h2>Our Core Services</h2>
+            <div class="services-cards">
+                <div class="service-card">
+                    <img src="{{ url_for('static', filename='img/cook3.jpeg') }}" alt="Personal Recipe Consultation">
+                    <h3>Personal Recipe Consultation</h3>
+                    <p>Get personalized recipes and meal plans tailored to your dietary needs and preferences.</p>
+                </div>
+                <div class="service-card">
+                    <img src="{{ url_for('static', filename='img/cook3.jpeg') }}" alt="Online Cooking Classes">
+                    <h3>Online Cooking Classes</h3>
+                    <p>Join our interactive cooking classes to learn new skills and cooking techniques from expert chefs.</p>
+                </div>
+                <div class="service-card">
+                    <img src="{{ url_for('static', filename='img/cook3.jpeg') }}" alt="Recipe Subscription">
+                    <h3>Recipe Subscription</h3>
+                    <p>Access exclusive recipes, seasonal dishes, and culinary tips with our subscription service.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer">
+            <div class="logo">
+                <img src="{{ url_for('static', filename='img/cooklogo.jpg') }}" alt="Cooking Chronicles Logo">
+                <p>
+                    At Cooking Chronicles, we believe cooking is an art that everyone can enjoy. Join us and start your culinary journey today!
+                </p>
+            </div>
+            <div class="footer-menu">
+                <h3>Quick Links</h3>
+                <ul class="footer-links">
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./about.html">About Us</a></li>
+                    <li><a href="./recipes.html">Recipes</a></li>
+                    <li><a href="./contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="contact-details">
+                <h3>Contact Details</h3>
+                <ul class="contact-items">
+                    <li><a href="tel:03345643237">0334-564-3237</a></li>
+                    <li><a href="mailto:cooking.chronicles@gmail.com">cooking.chronicles@gmail.com</a></li>
+                    <li>Street 10, DHA Phase 8, Karachi</li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2024 Cooking Chronicles. All Rights Reserved. Designed by Kashaf Israr (2024F-BSE-125).</p>
+        </div>
+    </footer>
+</body>
+</html>

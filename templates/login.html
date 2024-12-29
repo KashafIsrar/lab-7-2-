@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cooking Chronicles | Login</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <!-- Navbar -->
+    <header>
+        <div class="container-full navbar">
+            <div class="logo">
+                <img src="{{ url_for('static', filename='img/cooklogo.jpg') }}" alt="CookBook Logo">
+            </div>
+            <nav>
+                <ul class="navlinks">
+                    <li><a href="{{ url_for('home') }}">Home</a></li>
+                    <li><a href="{{ url_for('about') }}">About Us</a></li>
+                    <li><a href="{{ url_for('recipies') }}">Recipies</a></li>
+                    <li class="active"><a href="{{ url_for('login') }}">Login</a></li>
+                    <li><a href="{{ url_for('registration') }}">Registration</a></li>
+                    <li><a href="{{ url_for('contact') }}">Need Help?</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Login Section -->
+    <section id="login">
+        <div class="login-container">
+            <h2>Login</h2>
+            <p>Welcome back! Please login to your account.</p>
+
+            <form action="{{ url_for('login') }}" method="POST" class="login-form">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" placeholder="Enter your password" required>
+
+                <button type="submit" class="btn-login">Login</button>
+            </form>
+
+            <div class="additional-links">
+                <p>Don't have an account? <a href="{{ url_for('registration') }}">Register here</a>.</p>
+                <p><a href="{{ url_for('registration') }}">Forgot your password?</a></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer">
+            <div class="logo">
+                <img src="{{ url_for('static', filename='img/cooklogo.jpg') }}" alt="CookBook Logo">
+                <p>
+                    Join our community of food lovers and turn every meal into a masterpiece. Explore, cook, and savor the joy of delicious food today!
+                </p>
+            </div>
+            <div class="footer-menu">
+                <h3>Quick Links</h3>
+                <ul class="footer-links">
+                    <li><a href="{{ url_for('home') }}">Home</a></li>
+                    <li><a href="{{ url_for('about') }}">About Us</a></li>
+                    <li><a href="{{ url_for('recipies') }}">Services</a></li>
+                    <li><a href="{{ url_for('login') }}">Login</a></li>
+                </ul>
+            </div>
+            <div class="contact-details">
+                <h3>Contact Details</h3>
+                <address class="contact-items">
+                    <a href="tel:03345643237">0334-564-3237</a><br>
+                    <a href="mailto:cooking.chr@gmail.com">cooking.chr@gmail.com</a><br>
+                    Street 8, DHA Phase 6, Karachi
+                </address>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2024 Cooking Chronicles. All Rights Reserved. Designed by Kashaf Israr (2024F-BSE-125).</p>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,561 @@
+/* Reset some basic styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Body */
+body {
+    background-color: #4E3629;
+    color: #333;
+}
+
+/* Hero Section */
+#hero {
+    position: relative;
+    height: 500px;
+    background-image: url('path-to-your-image.jpg'); /* Background image for the hero section */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+.herobg {
+    background-image: url('./img/homepg.jpg'); 
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+
+}
+.hero-title {
+    font-size: 50px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.hero-description {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.hero-button {
+    background-color: #4E3629;
+    color: white;
+    padding: 10px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.hero-button:hover {
+    background-color: #e67e22;
+}
+
+/* About Us Section */
+#aboutus {
+    display: flex;
+    justify-content: space-around;
+    padding: 50px 20px;
+    background-color: #fff;
+}
+
+.about-container {
+    display: flex;
+    gap: 30px;
+}
+
+.about-image img {
+    width: 300px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.about-text h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+/* Services Section */
+#services {
+    background-color: #f2f2f2;
+    padding: 50px 20px;
+}
+
+.services-text h2 {
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+ .service-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+} 
+
+.service-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.service-card h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.service-card p {
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+#services {
+    padding: 50px 20px;
+    background-color: #5d4037;
+    text-align: center;
+}
+
+#services h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+
+.services-cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.service-card {
+    background-color: #6d4c41;
+    padding: 30px;
+    margin: 10px;
+    width: 250px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.service-card img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+
+.service-card p {
+    font-size: 1rem;
+    color: white;
+}
+
+.service-button:hover {
+    background-color: #e67e22;
+}
+
+/* Footer */
+footer {
+    background-color: #4E3629;
+    color: white;
+    padding: 40px 20px;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 50px;
+}
+
+.footer .logo img {
+    max-width: 150px;
+}
+
+.footer-menu, .contact-details {
+    max-width: 200px;
+}
+
+.footer-links {
+    list-style-type: none;
+}
+
+.footer-links li a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.footer-links li a:hover {
+    color: #ff8c00;
+}
+
+.contact-items a {
+    color: white;
+    text-decoration: none;
+}
+
+.contact-items a:hover {
+    color: #ff8c00;
+}
+
+/* Copyright */
+.copyright {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 14px;
+    color: #bdc3c7;
+}
+
+/* About Us Section */
+#recipe-categories {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+#recipe-categories h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+
+.category-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.category-card {
+    background-color: #6d4c41; /* Lighter brown */
+    padding: 30px;
+    margin: 10px;
+    width: 250px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.category-card h3 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.category-card p {
+    font-size: 1rem;
+    color: #e0e0e0;
+}
+
+/* Featured Recipe Section */
+#featured-recipe {
+    padding: 50px 20px;
+    background-color: #4e342e;
+    text-align: center;
+}
+
+#featured-recipe h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+
+.featured-recipe-card {
+    background-color: #6d4c41;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+}
+
+.featured-recipe-card img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.featured-recipe-card h3 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.featured-recipe-card p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.featured-recipe-card a {
+    color: #ff7043;
+    font-size: 1.2rem;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.featured-recipe-card a:hover {
+    color: #fff;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .category-container, .services-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .category-card, .service-card, .featured-recipe-card {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+
+    .hero-title {
+        font-size: 2rem;
+    }
+}
+/* login css */
+/* General Styles */
+/* Login Section */
+#login {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #fff;
+}
+
+#login .login-container {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+#login h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+#login p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+#login form {
+    display: flex;
+    flex-direction: column;
+}
+
+#login form input {
+    padding: 10px;
+    margin-bottom: 15px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#login form input:focus {
+    outline: none;
+    border-color: #e74c3c;
+}
+
+#login .btn-login {
+    padding: 12px;
+    background-color: #e74c3c;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#login .btn-login:hover {
+    background-color: #c0392b;
+}
+
+#login .additional-links p {
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+#login .additional-links a {
+    color: #e74c3c;
+    text-decoration: none;
+}
+
+#login .additional-links a:hover {
+    text-decoration: underline;
+}
+/* reg css */
+/* Navbar Styles */
+.navbar {
+    background-color: #2c3e50;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.navbar .logo img {
+    height: 40px;
+}
+
+.navbar nav ul.navlinks {
+    display: flex;
+    gap: 20px;
+}
+
+.navbar nav ul.navlinks li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 5px 10px;
+}
+
+.navbar nav ul.navlinks li a:hover,
+.navbar nav ul.navlinks li.active a {
+    background-color: #e74c3c;
+    border-radius: 5px;
+}
+
+/* Registration Section */
+#registration {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #fff;
+}
+
+#registration .registration-container {
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+#registration h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+#registration form {
+    display: flex;
+    flex-direction: column;
+}
+
+#registration form label {
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+#registration form input {
+    padding: 10px;
+    margin-bottom: 15px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#registration form input:focus {
+    outline: none;
+    border-color: #e74c3c;
+}
+
+#registration .btn-register {
+    padding: 12px;
+    background-color: #e74c3c;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#registration .btn-register:hover {
+    background-color: #c0392b;
+}
+
+#registration .additional-links p {
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+#registration .additional-links a {
+    color: #e74c3c;
+    text-decoration: none;
+}
+
+#registration .additional-links a:hover {
+    text-decoration: underline;
+}
+
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+    color: #333;
+} */
+
+/* Contact Section */
+#contact {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #fff;
+}
+
+#contact .contact-container {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+#contact h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+#contact h2 {
+    font-size: 20px;
+    margin-top: 20px;
+}
+#contact p {
+    font-size: 16px;
+}
+#contact .contact-details a,
+#contact .social-links a {
+    color: #e74c3c;
+    text-decoration: none;
+}
+#contact .contact-details a:hover,
+#contact .social-links a:hover {
+    text-decoration: underline;
+}
+/* Footer Section */
+footer {
+    background-color: #2c3e50;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+footer p {
+    font-size: 14px;
+}
